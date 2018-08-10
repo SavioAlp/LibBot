@@ -24,10 +24,11 @@ The script does a simple `POST` command with the required fields to send. (day, 
 
 ### Room for Improvement
 1. Fill up reserved gaps once released-- Usually within 1-2 days
-2. Dynamically located JSON file -- Currently statically assigned.
+2. ~~Dynamically located JSON file -- Currently statically assigned.~~ - Fixed 08/09/2018
 3. Remove reduntant data/code
 
 ### How to use
   * Python 3
   * JSON File named _"netlinkIDs.json"_ with two fields called `"usernames"` and `"passwords"`
     with usernames and passwords in an array.
+  * Set up CRON job to run at midnight every day
