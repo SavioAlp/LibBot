@@ -22,9 +22,10 @@ the reserved spots UVIC Library has on 7 day reservations.
 The script does a simple `POST` command with the required fields to send. (day, time room.. etc)
 
 
-### Improvement
+### Room for Improvement
 1. Fill up reserved gaps once released-- Usually within 1-2 days
 2. Dynamically located JSON file -- Currently statically assigned.
+3. Remove reduntant data/code
 
 ### How to use
   * Python 3
