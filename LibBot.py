@@ -18,7 +18,9 @@ postData = {'day':'00',
             }
 
 
-with open('netlinkIDs.json') as file:
+cur_path =  os.path.dirname(os.path.realpath(__file__)) + '/netlinkIDs.json'
+
+with open(cur_path) as file:
     logins = json.load(file)
 
 today = datetime.date.today()
