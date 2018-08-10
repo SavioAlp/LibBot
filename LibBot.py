@@ -14,7 +14,11 @@ postData = {'day':'00',
             'hour':'08',
             'minute':'00',
             'duration':'2hr',
-            'room':'15'
+            'netlinkid':'',
+            'netlinkpw':'',
+            'returl':'',
+            'room_id':'15',
+            'create_by':''
             }
 
 
@@ -42,22 +46,24 @@ for username in logins['usernames']:
 
 
             postData['hour'] = postData['hour']+ (i*4)
+            postData['netlinkid'] = username
+            postData['netlinkpw'] = logins['passwords'][i]
 
-            form = {
-            'day': postData['day'],
-            'month':postData['month'],
-            'year':postData['year'],
-            'name':postData['name'],
-            'hour':postData['hour'],
-            'minute':postData['minute'],
-            'duration':postData['duration'],
-            'netlinkid': username,
-            'netlinkpw': logins['passwords'][i],
-            'returl':"",
-            'room_id':postData['room'],
-            'create_by':""
-            }
+            # form = {
+            # 'day': postData['day'],
+            # 'month':postData['month'],
+            # 'year':postData['year'],
+            # 'name':postData['name'],
+            # 'hour':postData['hour'],
+            # 'minute':postData['minute'],
+            # 'duration':postData['duration'],
+            # 'netlinkid': username,
+            # 'netlinkpw': logins['passwords'][i],
+            # 'returl':"",
+            # 'room_id':postData['room'],
+            # 'create_by':""
+            # }
 
-            requests.post(url, allow_redirects=False, data=form)
+            requests.post(url, allow_redirects=False, data=postData)
 
             i += 1
