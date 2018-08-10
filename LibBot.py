@@ -42,27 +42,12 @@ url = 'https://webapp.library.uvic.ca/studyrooms/edit_entry_handler.php'
 
 
 i = 0
-for username in logins['usernames']:
+for username, password in zip(logins['usernames'], logins["passwords"]):
 
 
             postData['hour'] = postData['hour']+ (i*4)
             postData['netlinkid'] = username
-            postData['netlinkpw'] = logins['passwords'][i]
-
-            # form = {
-            # 'day': postData['day'],
-            # 'month':postData['month'],
-            # 'year':postData['year'],
-            # 'name':postData['name'],
-            # 'hour':postData['hour'],
-            # 'minute':postData['minute'],
-            # 'duration':postData['duration'],
-            # 'netlinkid': username,
-            # 'netlinkpw': logins['passwords'][i],
-            # 'returl':"",
-            # 'room_id':postData['room'],
-            # 'create_by':""
-            # }
+            postData['netlinkpw'] = password
 
             requests.post(url, allow_redirects=False, data=postData)
 
