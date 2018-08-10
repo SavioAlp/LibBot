@@ -25,6 +25,6 @@ The script does a simple `POST` command with the required fields to send. (day, 
 2. Dynamically located JSON file -- Currently statically assigned.
 
 ### How to use
-⋅⋅* Python 3
-⋅⋅* JSON File named _"netlinkIDs.json"_ with two fields called `"usernames"` and `"passwords"`
-⋅⋅⋅ with usernames and passwords in an array.
+  * Python 3
+  * JSON File named _"netlinkIDs.json"_ with two fields called `"usernames"` and `"passwords"`
+    with usernames and passwords in an array.
