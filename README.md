@@ -3,9 +3,11 @@ An script to automatically reserve a study room in the UVIC Library.
 
 ### Motivation
 1. **Crowded and Overpopulated**
+
    UVIC is very crowded during the school year and is incredibly difficult to find a place to 
    find a place to study for long periods of time. 
 2. **Laziness**
+
    Too lazy to book a room everyday.
 
 ### How it works.
