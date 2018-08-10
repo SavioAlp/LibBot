@@ -3,10 +3,6 @@ import json
 import os
 import datetime
 
-#day=09&month=08&year=2018&name=Despacito&hour=07&minute=30&duration=1hr&netlinkid=salphonso&netlinkpw=wh1t3Wh4le&returl=&room_id=15&create_by=
-
-#
-
 postData = {'day':'00',
             'month':'00',
             'year':'00',
