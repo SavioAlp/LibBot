@@ -36,8 +36,6 @@ postData['hour'] = 11 - (dayShift)
 
 url = 'https://webapp.library.uvic.ca/studyrooms/edit_entry_handler.php'
 
-
-i = 0
 for username, password in zip(logins['usernames'], logins["passwords"]):
 
 
@@ -46,5 +44,3 @@ for username, password in zip(logins['usernames'], logins["passwords"]):
             postData['netlinkpw'] = password
 
             requests.post(url, allow_redirects=False, data=postData)
-
-            i += 1
