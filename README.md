@@ -26,6 +26,7 @@ The script does a simple `POST` command with the required fields to send. (day, 
 1. Fill up reserved gaps once released-- Usually within 1-2 days
 2. ~~Dynamically located JSON file -- Currently statically assigned.~~ - Fixed 08/09/2018
 3. ~~Remove reduntant data/code~~ Fixed 08/10/2018
+4. Don't store passwords in plain text
 
 ### How to use
   * Python 3
